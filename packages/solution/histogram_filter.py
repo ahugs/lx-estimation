@@ -35,8 +35,6 @@ def histogram_predict(belief, left_encoder_ticks, right_encoder_ticks, grid_spec
     d_t = grid_spec['d'] + d_A * np.sin(grid_spec['phi'])
     phi_t = grid_spec['phi'] + d_phi
 
-    print(d_phi)
-
     # # # You may find the following code useful to find the current best heading estimate:
     # maxids = np.unravel_index(belief_in.argmax(), belief_in.shape)
     # phi_max = grid_spec['phi_min'] + (maxids[1] + 0.5) * grid_spec['delta_phi']
